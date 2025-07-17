@@ -7,9 +7,15 @@
     <meta name="description" content="共働き家庭が家事・育児・在宅ワークを効率よく両立できる、柔軟でカスタマイズ可能な空間作りを提案します。住まいの自由度を高め、個々のライフスタイルにぴったりの住環境を提供。">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+
     <style>
         body {
-            font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "Hiragino Sans", "ヒラギノ角ゴシック", sans-serif;
+            /* フォントをNoto Sans JP優先に変更 */
+            font-family: 'Noto Sans JP', "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "Hiragino Sans", "ヒラギノ角ゴシック", sans-serif;
             line-height: 1.7;
         }
         .hero-gradient {
@@ -17,6 +23,12 @@
         }
         .hero-text-shadow {
             text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+        }
+        /* 見出し用のタイポグラフィ調整クラスを新規追加 */
+        .hero-title {
+            text-wrap: balance; /* テキストの行の長さを均等に調整 */
+            word-break: keep-all; /* 文節の途中で改行されるのを防ぐ */
+            line-height: 1.4; /* 見出しに適した行間を指定 */
         }
         .btn-primary {
             background: linear-gradient(135deg, #ff8c00 0%, #ff6b35 100%);
@@ -54,8 +66,8 @@
             <div class="hero-gradient absolute inset-0"></div>
         </div>
         <div class="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-            <h1 class="text-4xl md:text-6xl font-bold mb-6 fade-in hero-text-shadow">
-                この家は、家事も育児も<br>スマートにこなせる舞台になる。
+            <h1 class="hero-title text-4xl md:text-6xl font-bold mb-6 fade-in hero-text-shadow">
+                この家は、家事も育児もスマートにこなせる舞台になる。
             </h1>
             <p class="text-xl md:text-2xl mb-8 fade-in hero-text-shadow">
                 家事・育児・在宅ワークを両立する、効率的な家づくり。

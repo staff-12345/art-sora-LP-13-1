@@ -14,21 +14,15 @@
 
     <style>
         body {
-            /* フォントをNoto Sans JP優先に変更 */
             font-family: 'Noto Sans JP', "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "Hiragino Sans", "ヒラギノ角ゴシック", sans-serif;
             line-height: 1.7;
         }
-        .hero-gradient {
-            background: linear-gradient(135deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.2) 100%);
+        .hero-overlay {
+            background: linear-gradient(135deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 100%);
         }
-        .hero-text-shadow {
-            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
-        }
-        /* 見出し用のタイポグラフィ調整クラスを新規追加 */
+        /* 見出し用のクラスを調整 */
         .hero-title {
-            text-wrap: balance; /* テキストの行の長さを均等に調整 */
-            word-break: keep-all; /* 文節の途中で改行されるのを防ぐ */
-            line-height: 1.4; /* 見出しに適した行間を指定 */
+            line-height: 1.5; /* 見出しに適した行間を指定 */
         }
         .btn-primary {
             background: linear-gradient(135deg, #ff8c00 0%, #ff6b35 100%);
@@ -63,16 +57,16 @@
 
     <header class="relative min-h-screen flex items-center justify-center">
         <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://www.bhg.com/thmb/WDrv60jlQuyWB_K6G-cufp2ovd8=/6300x0/filters:no_upscale():strip_icc()/GettyImages-2188908741-5609de8152b44221afc08ff5afe49f06.jpg');">
-            <div class="hero-gradient absolute inset-0"></div>
+            <div class="hero-overlay absolute inset-0"></div>
         </div>
-        <div class="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-            <h1 class="hero-title text-4xl md:text-6xl font-bold mb-6 fade-in hero-text-shadow">
-                この家は、家事も育児もスマートにこなせる舞台になる。
+        <div class="relative z-10 text-center text-white px-4 max-w-5xl mx-auto">
+            <h1 class="hero-title text-4xl sm:text-5xl md:text-6xl font-bold mb-6 fade-in drop-shadow-lg">
+                この家は、家事も育児も<br>スマートにこなせる舞台になる。
             </h1>
-            <p class="text-xl md:text-2xl mb-8 fade-in hero-text-shadow">
+            <p class="text-xl md:text-2xl mb-8 fade-in drop-shadow-md">
                 家事・育児・在宅ワークを両立する、効率的な家づくり。
             </p>
-            <a href="#contact-form" class="btn-primary inline-block px-8 py-4 rounded-full text-lg font-semibold text-white no-underline fade-in">
+            <a href="#contact-form" class="btn-primary inline-block px-8 py-4 rounded-full text-lg font-semibold text-white no-underline fade-in shadow-lg hover:shadow-xl">
                 <i class="fas fa-download mr-2"></i>資料を無料で受け取る
             </a>
         </div>
